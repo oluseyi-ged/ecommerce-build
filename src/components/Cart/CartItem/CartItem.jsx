@@ -20,8 +20,8 @@ const CartItem = ({ item }) => {
         className={classes.media}
       />
       <CardContent className={classes.cardContent}>
-        <Typography variant="h4">{item.name}</Typography>
-        <Typography variant="h5">
+        <Typography variant="body4">{item.name}</Typography>
+        <Typography variant="body5">
           {item.line_total.formatted_with_symbol}
         </Typography>
       </CardContent>
