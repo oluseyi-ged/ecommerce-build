@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import "./App.css"
 import { commerce } from "./lib/commerce"
 
-import { Products, Navbar, Cart } from "./components"
+import { Products, Navbar, Cart, Checkout } from "./components"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 const App = () => {
@@ -64,6 +64,14 @@ const App = () => {
               handleUpdateCartQty={handleUpdateCartQty}
               handleRemoveFromCart={handleRemoveFromCart}
               handleEmptyCart={handleEmptyCart}
+            />
+          </Route>
+          <Route path="/checkout" exact>
+            <Checkout
+              cart={cart}
+              // order={order}
+              // onCaptureCheckout={handleCaptureCheckout}
+              // error={errorMessage}
             />
           </Route>
         </Switch>

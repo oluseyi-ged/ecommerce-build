@@ -45,12 +45,14 @@ const Cart = ({
             type="button"
             variant="contained"
             color="secondary"
-            onClick={() => handleEmptyCart}
+            onClick={handleEmptyCart}
           >
             Empty
           </Button>
           <Button
             className={classes.checkoutButton}
+            component={Link}
+            to="/checkout"
             size="large"
             type="button"
             variant="contained"
