@@ -39,7 +39,7 @@ export default makeStyles((theme) => ({
   },
   button: {
     marginTop: theme.spacing(3),
-    marginLeft: theme.spacing(1),
+    marginLeft: theme.spacing(2),
   },
   divider: {
     margin: "20px 0",
